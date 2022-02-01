@@ -1,0 +1,11 @@
+meet.google.com/uzz-vfpc-epg
+copy en link iku nang browser
+telpon nggawe iku ae 
+Ahadian Akbar (7:50 PM):
+lek wes paham ndang garapen
+mulai nginput data sek di gawe percobaan menampilkan data
+id ne ga usah di isi soale wes auto increment
+Ahadian Akbar (8:48 PM):
+user_id di isi session_id engkok
+Ahadian Akbar (8:51 PM):
+user id ga usah required
