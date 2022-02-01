@@ -76,9 +76,9 @@
                 </button>
               </div>
 
-              <div class="mt-5 text-center">
+              <!-- <div class="mt-5 text-center">
                 Don't have an account? <a href="<?php echo base_url('index.php/register'); ?>">Registration</a>
-              </div>
+              </div> -->
             </form>
 
             <div class="text-center mt-5 text-small">
