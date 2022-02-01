@@ -54,6 +54,7 @@ class User extends CI_Controller {
         $user = $this->User_model;
 		$validation = $this->form_validation;
         $validation->set_rules($user->rules());
+		$validation->set_error_delimiters('<div class="text-danger">','</div>');
 	
 		if ($validation->run() == FALSE) {
 			$this->tambah();
@@ -75,6 +76,7 @@ class User extends CI_Controller {
 
         $validation = $this->form_validation;
         $validation->set_rules($user->rules());
+		$validation->set_error_delimiters('<div class="text-danger">','</div>');
 
         if ($validation->run()) {
             $user->update($where,$post);

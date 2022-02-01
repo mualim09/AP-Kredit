@@ -46,6 +46,18 @@ class kredit_model extends CI_Model
             'label' => 'lama_cicilan',
             'rules' => 'required'],
 
+			['field' => 'barang',
+            'label' => 'barang',
+            'rules' => 'required'],
+
+			['field' => 'harga_cash',
+            'label' => 'harga_cash',
+            'rules' => 'required'],
+
+			['field' => 'harga_kredit',
+            'label' => 'harga_kredit',
+            'rules' => 'required'],
+
 			/* print_r($data);
 			exit(); */
 
@@ -72,6 +84,9 @@ class kredit_model extends CI_Model
 		$this->nominal= $post["nominal"];
 		$this->dp= $post["dp"];
 		$this->lama_cicilan= $post["lama_cicilan"];
+        $this->lama_cicilan= $post["barang"];
+        $this->lama_cicilan= $post["harga_cash"];
+        $this->lama_cicilan= $post["harga_kredit"];
 		return $this->db->insert($this->_table, $this);
 		/* 	$this->foto_pengguna= "default.jpg"; */
     }

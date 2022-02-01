@@ -28,7 +28,7 @@
             <div class="card card-primary">
               <div class="card-header"><h4>Register</h4></div>
 
-						<div class="alert alert-danger" role="alert">
+						<div>
 							<?php echo validation_errors(); ?>
 						</div>
 

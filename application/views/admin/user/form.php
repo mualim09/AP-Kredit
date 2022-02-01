@@ -43,7 +43,7 @@
 
 			<div class="card-body">
 
-			<div class="alert alert-danger" role="alert">
+			<div>
 					<?php echo validation_errors(); ?>
 			</div>
 			

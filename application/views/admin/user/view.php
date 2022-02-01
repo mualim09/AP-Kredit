@@ -24,17 +24,19 @@
 				<div class="card-body">
 				
 				<a href="<?php echo base_url('index.php/user/tambah'); ?>" class="btn btn-outline-primary">Tambah data</a>
-		 
+				<br />
+				<br />
+
 				<table class="table">
 					<thead>
 					<tr>
-						<th scope="col">id</th>
-						<th scope="col">username</th>
-						<th scope="col">email</th>
-						<th scope="col">jenis_kelamin</th>
-						<th scope="col">name</th>
-						<th scope="col">hapus</th>
-						<th scope="col">edit</th>
+						<th scope="col">ID</th>
+						<th scope="col">Username</th>
+						<th scope="col">Email</th>
+						<th scope="col">Jenis kelamin</th>
+						<th scope="col">Name</th>
+						<th scope="col">Hapus</th>
+						<th scope="col">Edit</th>
 					</tr>
 					</thead>
 					<tbody>

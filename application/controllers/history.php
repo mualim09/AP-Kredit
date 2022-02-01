@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class history extends CI_Controller
+class History extends CI_Controller
 {
     public function __construct()
     {
@@ -42,6 +42,7 @@ class history extends CI_Controller
         $history = $this->history_model;
 		$validation = $this->form_validation;
         $validation->set_rules($history->rules());
+		$validation->set_error_delimiters('<div class="text-danger">','</div>');
 	
 		if ($validation->run() == FALSE) {
 			$this->index($id);

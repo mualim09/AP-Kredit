@@ -24,6 +24,8 @@
 				<div class="card-body">
 				
 				<a href="<?php echo base_url('index.php/kredit/tambah'); ?>" class="btn btn-outline-primary">Tambah data</a>
+				<br />
+				<br />
 		 
 				<table class="table">
 					<thead>

@@ -37,7 +37,7 @@
 
 			<div class="card-body">
 
-			<div class="alert alert-danger" role="alert">
+			<div >
 					<?php echo validation_errors(); ?>
 			</div>
 			
@@ -97,6 +97,18 @@
 				<div class="form-group">
 					<label>Lama Cicilan</label>
 					<input id="lama_cicilan" type="text" class="form-control datemask" placeholder="Tulis nama lama_cicilan yang benar" name="lama_cicilan" value="<?php echo !empty($_POST['lama_cicilan']) ? set_value('lama_cicilan') : (!empty($kredit) ? $kredit['lama_cicilan'] : ""); ?>">
+				</div>
+				<div class="form-group">
+					<label>Barang</label>
+					<input id="barang" type="text" class="form-control datemask" placeholder="Tulis nama barang yang benar" name="barang" value="<?php echo !empty($_POST['barang']) ? set_value('barang') : (!empty($kredit) ? $kredit['barang'] : ""); ?>">
+				</div>
+				<div class="form-group">
+					<label>Harga Cash</label>
+					<input id="harga_cash" type="text" class="form-control datemask" placeholder="Tulis harga cash yang benar" name="harga_kredit" value="<?php echo !empty($_POST['harga_kredit']) ? set_value('harga_kredit') : (!empty($kredit) ? $kredit['harga_kredit'] : ""); ?>">
+				</div>
+				<div class="form-group">
+					<label>Harga Kredit</label>
+					<input id="harga_kredit" type="text" class="form-control datemask" placeholder="Tulis harga kredit yang benar" name="harga_kredit" value="<?php echo !empty($_POST['harga_kredit']) ? set_value('harga_kredit') : (!empty($kredit) ? $kredit['harga_kredit'] : ""); ?>">
 				</div>
 				
 

@@ -33,6 +33,7 @@ class Login extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'required',
 				array('required' => 'You must provide a %s.')
 		);
+		$this->form_validation->set_error_delimiters('<div class="text-danger">','</div>');
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->index();

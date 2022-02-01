@@ -30,6 +30,8 @@ class Register extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'required');
 		$this->form_validation->set_rules('passwordconfirm', 'Password Confirmation', 'required');
 
+		$this->form_validation->set_error_delimiters('<div class="text-danger">','</div>');
+
 		if ($this->form_validation->run() == FALSE) {
 			$this->index();
 		}

@@ -30,7 +30,7 @@
 						<?php
 							$errors = validation_errors();
 						?>
-						<div class="alert alert-danger" role="alert">
+						<div>
 							<?php echo validation_errors(); ?>
 						</div>
 

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class kredit extends CI_Controller {
+class Kredit extends CI_Controller {
 	
 	public function __construct()
 	{
@@ -59,6 +59,7 @@ class kredit extends CI_Controller {
         $user = $this->kredit_model;
 		$validation = $this->form_validation;
         $validation->set_rules($user->rules());
+		$validation->set_error_delimiters('<div class="text-danger">','</div>');
 	
 		if ($validation->run() == FALSE) {
 			$this->tambah();
@@ -80,6 +81,7 @@ class kredit extends CI_Controller {
 
         $validation = $this->form_validation;
         $validation->set_rules($kredit->rules());
+		$validation->set_error_delimiters('<div class="text-danger">','</div>');
 
         if ($validation->run()) {
             $kredit->update($where,$post);
