@@ -16,7 +16,7 @@ class Dashboard extends CI_Controller {
 	{
 		$data['content'] = 'dashboard/halamantest';
 		$data['Total_user'] = $this->db->count_all_results('users');
-		$data['Total_kredit'] = $this->db->count_all_results('users');
+		$data['Total_kredit'] = $this->db->count_all_results('kredit');
 		$this->load->view('layout/content',$data);
 		
 		/*  print_r($data);
