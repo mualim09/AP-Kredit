@@ -1,5 +1,6 @@
       <!-- Main Content -->
-      <div class="main-content">
+      
+			<div class="main-content">
         <section class="section">
 		<div class="section-header">
             <h1>Alert</h1>
@@ -10,13 +11,78 @@
             </div>
           </div>
 
-          <div class="section-body">
+					<div class="section-body">
 			<h1>Perkreditan</h1>
 			<h8>By Safrizal Rahman</h8>
-			
+			<br>
+		</br>
+
+					<div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-primary">
+                  <i class="far fa-user"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Total User</h4>
+                  </div>
+                  <div class="card-body">
+                  <?php echo $Total_user; ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-danger">
+                  <i class="far fa-newspaper"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Total Kredit</h4>
+                  </div>
+                  <div class="card-body">
+										<?php echo $Total_kredit; ?>
+										</div>
+                </div>
+              </div>
+            </div>
+          <!--   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-warning">
+                  <i class="far fa-file"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Reports</h4>
+                  </div>
+                  <div class="card-body">
+                    1,201
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-success">
+                  <i class="fas fa-circle"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Online Users</h4>
+                  </div>
+                  <div class="card-body">
+                    47
+                  </div>
+                </div>
+              </div>
+            </div>   -->                
+          </div>
+
 		  </div>
 			<blockquote class="blockquote text-center">
- 				 <p class="mb-0">Selamat Datang Di Web Perkreditan .</p>
+ 				 <p class="mb-0">Selamat Datang Di Web Pencatatan Perkreditan .</p>
   			 <footer class="blockquote-footer"><cite title="Safrizal Garage">Safrizal Garage </cite></footer>
 			</blockquote>
 		  <div class="section-body">
