@@ -82,10 +82,15 @@
 					<label>Jenis Kelamin</label>
 					<div class="input-group">
 					<div class="input-group-prepend">
-						
+					<select name="jenis_kelamin" id="jenis_kelamin" class="form-control">
+						<option <?php echo !empty($_POST['jenis_kelamin']) ? ($_POST['jenis_kelamin'] == 'Laki - laki' ? "selected" : "") : (!empty($user) ? ($user['jenis_kelamin'] == 'Laki - Laki' ? "selected" : "") : ""); ?> value="Laki - Laki">Laki - Laki</option>
+						<option <?php echo !empty($_POST['jenis_kelamin']) ? ($_POST['jenis_kelamin'] == 'Perempuan' ? "selected" : "") : (!empty($user) ? ($user['jenis_kelamin'] == 'Perempuan' ? "selected" : "") : ""); ?> value="Perempuan">Perempuan</option>
+					</select>	
 					</div>
-						<input id="jenis_kelamin" type="text" class="form-control currency" name="jenis_kelamin"  value="<?php echo !empty($_POST['jenis_kelamin']) ? set_value('jenis_kelamin') : (!empty($user) ? $user['jenis_kelamin'] : ""); ?>">
+						<!-- <input id="jenis_kelamin" type="text" class="form-control currency" name="jenis_kelamin"  value="<?php echo !empty($_POST['jenis_kelamin']) ? set_value('jenis_kelamin') : (!empty($user) ? $user['jenis_kelamin'] : ""); ?>"> -->
 					</div>
+					
+					
 				</div>
 				<div class="form-group">
 					<label>Alamat</label>

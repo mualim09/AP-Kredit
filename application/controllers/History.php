@@ -16,6 +16,7 @@ class History extends CI_Controller
     {
 		$data = array();
 		$data['history'] = $this->db->where('kredit_id', $id)->get('history_kredit')->result_array(); 
+		$data['id'] = $id;
       /*   $data["history"] = $this->History_model->getAll(); */
       /*   $this->load->view("content", $data); */
 	  	$data['content'] = 'admin/history';
@@ -28,6 +29,15 @@ class History extends CI_Controller
 		
 	 
     }
+	public function export($id)
+	{
+		$data = array();
+		$data['history'] = $this->db->where('kredit_id', $id)->get('history_kredit')->result_array(); 
+		$this->load->view('admin/export_excel',$data);
+	/* 	print_r($data['history']);
+		print_r($id);
+		exit();  */
+	}
 	
 	/* public function tambah()
 	{

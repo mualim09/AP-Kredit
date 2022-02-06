@@ -66,17 +66,17 @@
       						</div>
       					</div>
       					<div class="form-group">
-      						<label>tanggal</label>
+      						<label>Tanggal</label>
       						<div class="input-group">
       							<div class="input-group-prepend">
 
       							</div>
-      							<input id="tanggal" type="text" class="form-control currency" name="tanggal" value="<?php echo !empty($_POST['tanggal']) ? set_value('tanggal') :  ""; ?>">
+      							<input id="tanggal" type="date" class="form-control currency" name="tanggal" value="<?php echo !empty($_POST['tanggal']) ? set_value('tanggal') :  ""; ?>">
       						</div>
       					</div>
 
       					<div class="form-group">
-      						<label>status</label>
+      						<label>Status</label>
 							 
 
 							  <select name="status" id="status" class="form-control">
@@ -97,18 +97,18 @@
 			  <div class="card-body">
 				<h4>Table</h4>
 		
-			
+				<a href="<?php echo base_url('index.php/history/export/'.$id); ?>" class="btn btn-outline-primary">Export</a>
 		
 				<table class="table">
 					<thead>
 						<tr>
 							<th scope="col">id</th>
 		
-							<th scope="col">cicilan_ke</th>
-							<th scope="col">tanggal</th>
-							<th scope="col">name</th>
-							<th scope="col">status</th>
-							<th scope="col">hapus</th>
+							<th scope="col">Cicilan ke</th>
+							<th scope="col">Tanggal</th>
+							<th scope="col">Name</th>
+							<th scope="col">Status</th>
+							<th scope="col">Action</th>
 							<!-- <th scope="col">edit</th> -->
 						</tr>
 					</thead>

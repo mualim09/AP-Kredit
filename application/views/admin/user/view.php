@@ -26,7 +26,7 @@
 				</div>
 			<?php endif; ?>
 
-			
+		
 				<a href="<?php echo base_url('index.php/user/tambah'); ?>" class="btn btn-outline-primary">Tambah data</a>
 				<br />
 				<br />
